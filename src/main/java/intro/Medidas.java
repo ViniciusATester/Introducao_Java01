@@ -3,11 +3,26 @@ package intro;
 public class Medidas {
 
     public static void main(String [] args) {
-        System.out.println("Calculo de areas ");
+
+        calcularAreaModoCurto();
+        calcularAreaModoExtenso();
+
+
 
     }
+    public static void calcularAreaModoCurto(){
+        System.out.println("Calculo de area modo curto");
 
-        public void calcularAreaModoExtenso(){
+        int largura = 4;
+        int comprimento= 3;
+
+        System.out.println( "A largura de "+largura +"m e o comprimento de "
+                +comprimento+"m a area e de "+largura * comprimento+" m"  );
+    }
+
+        public static void calcularAreaModoExtenso(){
+
+            System.out.println("Calculo de area modo extenso");
             int largura;
             int comprimento;
             int resultado;
@@ -18,17 +33,6 @@ public class Medidas {
             resultado = largura * comprimento;
             System.out.println( "A largura de "+largura +"m e o comprimento de "
                     +comprimento+"m a area e de "+resultado+" m"  );
-
-        }
-
-
-
-    public void calcularAreaModoCompacto(){
-        int largura = 4;
-        int comprimento= 3;
-
-        System.out.println( "A largura de "+largura +"m e o comprimento de "
-                +comprimento+"m a area e de "+largura * comprimento+" m"  );
 
     }
 
